@@ -5,8 +5,6 @@
 # For technical reasons, this file is *NOT* reloaded automatically when you use
 # 'jekyll serve'. If you change this file, please restart the server process.
 
-encoding: utf-8
-
 # Site settings
 title: Elf-mousE's stack library
 email: ifmouz@qq.com
@@ -19,3 +17,5 @@ url: "http://3nvironment.github.io" # the base hostname & protocol for your site
 
 # Build settings
 markdown: kramdown
+destination: stack
+encoding: utf-8

@@ -2,5 +2,6 @@ _refills-*
 _sass/bourbon
 _sass/neat
 _site
+stack
 .jekyll-metadata
 .sass-cache
