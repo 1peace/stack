@@ -445,4 +445,4 @@ categories: develop
 
 ---
 
-![拔赤总结的前端技能图](https://raw.githubusercontent.com/3nvironment/stack/master/img/front-end.jpg)
+![拔赤总结的前端技能图](https://raw.githubusercontent.com/3nvironment/stack/gh-pages/img/front-end.jpg)
