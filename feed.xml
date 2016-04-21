@@ -6,9 +6,93 @@
 </description>
     <link>http://3nvironment.github.io/stack/</link>
     <atom:link href="http://3nvironment.github.io/stack/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 19 Apr 2016 18:03:58 +0800</pubDate>
-    <lastBuildDate>Tue, 19 Apr 2016 18:03:58 +0800</lastBuildDate>
+    <pubDate>Thu, 21 Apr 2016 18:00:15 +0800</pubDate>
+    <lastBuildDate>Thu, 21 Apr 2016 18:00:15 +0800</lastBuildDate>
     <generator>Jekyll v3.1.3</generator>
+    
+      <item>
+        <title>Environment Variables</title>
+        <description>&lt;h2 id=&quot;mac-&quot;&gt;Mac 启动加载文件位置（可设置环境变量）&lt;/h2&gt;
+
+&lt;h3 id=&quot;mac-os-xshell&quot;&gt;1. 首先要知道你使用的Mac OS X是什么样的Shell，使用命令&lt;/h3&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;echo $SHELL
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;如果输出的是：&lt;code class=&quot;highlighter-rouge&quot;&gt;csh&lt;/code&gt;或者是&lt;code class=&quot;highlighter-rouge&quot;&gt;tcsh&lt;/code&gt;，那么你用的就是C Shell&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;如果输出的是：&lt;code class=&quot;highlighter-rouge&quot;&gt;bash&lt;/code&gt;，&lt;code class=&quot;highlighter-rouge&quot;&gt;sh&lt;/code&gt;，&lt;code class=&quot;highlighter-rouge&quot;&gt;zsh&lt;/code&gt;，那么你的用的可能就是Bourne Shell的一个变种&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Mac OS X 10.2之前默认的是C Shell&lt;/li&gt;
+  &lt;li&gt;Mac OS X 10.3之后默认的是Bourne Shell&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;bourne-shellprofilebashprofile&quot;&gt;2. 如果是Bourne Shell，那么你可以把你要添加的环境变量添加到你主目录下面的&lt;code class=&quot;highlighter-rouge&quot;&gt;.profile&lt;/code&gt;或者&lt;code class=&quot;highlighter-rouge&quot;&gt;.bash_profile&lt;/code&gt;，如果存在没有关系添加进去即可，如果没有生成一个&lt;/h3&gt;
+
+&lt;p&gt;&lt;strong&gt;Mac配置环境变量的地方&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;etcprofile&quot;&gt;1. &lt;code class=&quot;highlighter-rouge&quot;&gt;/etc/profile&lt;/code&gt;（建议不修改这个文件）&lt;/h4&gt;
+
+&lt;p&gt;全局（公有）配置，不管是哪个用户，登录时都会读取该文件。&lt;/p&gt;
+
+&lt;h4 id=&quot;etcbashrc&quot;&gt;2. &lt;code class=&quot;highlighter-rouge&quot;&gt;/etc/bashrc&lt;/code&gt;（一般在这个文件中添加系统级环境变量）&lt;/h4&gt;
+
+&lt;p&gt;全局（公有）配置，bash shell执行时，不管是何种方式，都会读取此文件。&lt;/p&gt;
+
+&lt;h4 id=&quot;bashprofile&quot;&gt;3. &lt;code class=&quot;highlighter-rouge&quot;&gt;~/.bash_profile&lt;/code&gt;（一般在这个文件中添加用户级环境变量）&lt;/h4&gt;
+
+&lt;p&gt;每个用户都可使用该文件输入专用于自己使用的shell信息,当用户登录时,该文件仅仅执行一次!&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;mac-host&quot;&gt;MAC 修改host文件&lt;/h2&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo vi /etc/hosts
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;linuxpath&quot;&gt;Linux下查看和添加PATH环境变量&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;PATH的格式为：&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;PATH=$PATH:&amp;lt;PATH 1&amp;gt;:&amp;lt;PATH 2&amp;gt;:&amp;lt;PATH 3&amp;gt;:------:&amp;lt;PATH N&amp;gt;&lt;/code&gt;，中间用冒号隔开。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;添加PATH环境变量：&lt;/strong&gt;&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;export PATH=$PATH:/path/to/dir1
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;查看PATH环境变量：&lt;/strong&gt;&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;echo $PATH
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;操作示例：&lt;/strong&gt;&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;vi .bash_profile
+export PATH=$PATH:/path/to/dir1
+:wq
+
+# 立即生效（不报错则成功）
+source /etc/profile
+source .bash_profile
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+</description>
+        <pubDate>Thu, 21 Apr 2016 00:00:00 +0800</pubDate>
+        <link>http://3nvironment.github.io/stack/develop/2016/04/21/environment-variables.html</link>
+        <guid isPermaLink="true">http://3nvironment.github.io/stack/develop/2016/04/21/environment-variables.html</guid>
+        
+        
+        <category>develop</category>
+        
+      </item>
     
       <item>
         <title>Welcome to Elf-mousE&#39;s stack library</title>
