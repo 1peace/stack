@@ -6,16 +6,16 @@
 </description>
     <link>http://3nvironment.github.io/stack/</link>
     <atom:link href="http://3nvironment.github.io/stack/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 25 Apr 2016 14:43:52 +0800</pubDate>
-    <lastBuildDate>Mon, 25 Apr 2016 14:43:52 +0800</lastBuildDate>
+    <pubDate>Tue, 10 May 2016 22:45:41 +0800</pubDate>
+    <lastBuildDate>Tue, 10 May 2016 22:45:41 +0800</lastBuildDate>
     <generator>Jekyll v3.1.3</generator>
     
       <item>
         <title>Workflow Tools</title>
         <description>&lt;ul&gt;
-  &lt;li&gt;包管理工具（package manager）: &lt;a href=&quot;https://www.npmjs.com/&quot;&gt;npm&lt;/a&gt;, &lt;a href=&quot;https://npm.taobao.org/&quot;&gt;cnpm&lt;/a&gt;, &lt;a href=&quot;http://bower.io/&quot;&gt;Bower&lt;/a&gt;, &lt;a href=&quot;http://gugel.io/ied/&quot;&gt;ied&lt;/a&gt; 等。&lt;/li&gt;
+  &lt;li&gt;包管理工具（package manager）: &lt;a href=&quot;https://www.npmjs.com/&quot;&gt;npm&lt;/a&gt;, &lt;a href=&quot;http://bower.io/&quot;&gt;Bower&lt;/a&gt; 等。&lt;/li&gt;
   &lt;li&gt;模块加载器（module loader）: &lt;a href=&quot;http://requirejs.org/&quot;&gt;RequireJS&lt;/a&gt;, &lt;a href=&quot;http://seajs.org/docs/&quot;&gt;SeaJS&lt;/a&gt; 等。&lt;/li&gt;
-  &lt;li&gt;打包工具（bundler）: &lt;a href=&quot;https://github.com/requirejs/r.js&quot;&gt;r.js&lt;/a&gt;, &lt;a href=&quot;http://browserify.org/&quot;&gt;Browserify&lt;/a&gt;, &lt;a href=&quot;https://webpack.github.io/&quot;&gt;webpack&lt;/a&gt;, &lt;a href=&quot;http://rollupjs.org/&quot;&gt;Rollup&lt;/a&gt; 等。&lt;/li&gt;
+  &lt;li&gt;打包工具（module bundler）: &lt;a href=&quot;http://browserify.org/&quot;&gt;Browserify&lt;/a&gt;, &lt;a href=&quot;https://webpack.github.io/&quot;&gt;webpack&lt;/a&gt;, &lt;a href=&quot;http://rollupjs.org/&quot;&gt;Rollup&lt;/a&gt; 等。&lt;/li&gt;
   &lt;li&gt;转码器（compiler）: &lt;a href=&quot;http://babeljs.io/&quot;&gt;Babel&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;自动化构建工具（build system）: &lt;a href=&quot;http://gruntjs.com/&quot;&gt;Grunt&lt;/a&gt;, &lt;a href=&quot;http://gulpjs.com/&quot;&gt;gulp&lt;/a&gt;, &lt;a href=&quot;http://yeoman.io/&quot;&gt;Yeoman&lt;/a&gt;, &lt;a href=&quot;http://fex-team.github.io/fis3/&quot;&gt;FIS3&lt;/a&gt;, &lt;a href=&quot;https://coolie.ydr.me/&quot;&gt;coolie&lt;/a&gt; 等。&lt;/li&gt;
 &lt;/ul&gt;
